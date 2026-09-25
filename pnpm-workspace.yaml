@@ -1,3 +1,4 @@
 allowBuilds:
   cypress: false
+  esbuild: false
 sideEffectsCache: false
