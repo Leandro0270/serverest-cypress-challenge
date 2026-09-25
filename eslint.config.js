@@ -7,10 +7,10 @@ const cypressGlobals = {
 module.exports = [
   {
     ignores: [
-     'node_modules/**',
-     'cypress/screenshots/**',
-     'cypress/videos/**',
-     'cypress/downloads/**',
+      "node_modules/**",
+      "cypress/screenshots/**",
+      "cypress/videos/**",
+      "cypress/downloads/**",
     ],
   },
   {

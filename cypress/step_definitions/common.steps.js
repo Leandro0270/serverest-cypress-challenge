@@ -1,8 +1,4 @@
-import {
-  Given,
-  Then,
-  After,
-} from "@badeball/cypress-cucumber-preprocessor";
+import { Given, Then, After } from "@badeball/cypress-cucumber-preprocessor";
 
 import usersService from "../services/users.service";
 import { generateUser } from "../utils/dataFactory";

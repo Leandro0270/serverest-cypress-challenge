@@ -8,10 +8,7 @@ import {
 import usersService from "../../services/users.service";
 import authService from "../../services/auth.service";
 import productsService from "../../services/products.service";
-import {
-  generateUser,
-  generateProduct,
-} from "../../utils/dataFactory";
+import { generateUser, generateProduct } from "../../utils/dataFactory";
 
 let adminUserId;
 let token;

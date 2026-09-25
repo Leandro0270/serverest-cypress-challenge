@@ -1,9 +1,9 @@
-import { ELEMENTS as el } from './elements'
+import { ELEMENTS as el } from "./elements";
 
 class HomePage {
   validatePage() {
-    cy.location('pathname').should('eq', '/home')
-    cy.get(el.LOGOUT_BUTTON).should('be.visible')
+    cy.location("pathname").should("eq", "/home");
+    cy.get(el.LOGOUT_BUTTON).should("be.visible");
   }
 
   addFirstProductToShoppingList() {
@@ -11,14 +11,14 @@ class HomePage {
       .first()
       .within(() => {
         cy.get(el.PRODUCT_TITLE)
-          .invoke('text')
+          .invoke("text")
           .then((text) => {
-            cy.wrap(text.trim()).as('selectedProductName')
-          })
+            cy.wrap(text.trim()).as("selectedProductName");
+          });
 
-        cy.get(el.ADD_TO_LIST_BUTTON).click()
-      })
+        cy.get(el.ADD_TO_LIST_BUTTON).click();
+      });
   }
 }
 
-export default new HomePage()
+export default new HomePage();
