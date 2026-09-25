@@ -1,14 +1,14 @@
 class AuthService {
   login(credentials) {
-    return cy.env(['apiUrl']).then(({ apiUrl }) => {
+    return cy.env(["apiUrl"]).then(({ apiUrl }) => {
       return cy.request({
-        method: 'POST',
+        method: "POST",
         url: `${apiUrl}/login`,
         body: credentials,
         failOnStatusCode: false,
-      })
-    })
+      });
+    });
   }
 }
 
-export default new AuthService()
+export default new AuthService();
