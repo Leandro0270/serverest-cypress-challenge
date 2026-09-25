@@ -1,2 +1,3 @@
 allowBuilds:
   cypress: false
+sideEffectsCache: false
