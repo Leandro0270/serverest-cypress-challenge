@@ -12,3 +12,10 @@ Funcionalidade: Login de usuário
     Quando informo minhas credenciais válidas
     E confirmo o login
     Então devo ser autenticado com sucesso
+
+  Cenário: Tentar realizar login com credenciais inválidas
+    Dado acesso a página de login 
+    Quando informo credenciais inválidas
+    E confirmo o login
+    Então devo visualizar uma mensagem de credenciais inválidas
+    E devo permanecer na página de login
