@@ -29,6 +29,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Install Cypress binary
+        run: pnpm exec cypress install
+
+      - name: Verify Cypress
+        run: pnpm exec cypress verify
+
       - name: Run lint
         run: pnpm lint
 
@@ -37,7 +43,7 @@ jobs:
         run: pnpm test
 
       - name: Upload Cypress artifacts
-        if: steps.cypress.outcome == 'failure'
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: cypress-artifacts
