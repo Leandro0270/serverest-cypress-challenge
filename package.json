@@ -8,10 +8,13 @@
     "eslint": "^10.11.0",
     "prettier": "^3.9.9"
   },
-  "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
-  }
+"scripts": {
+  "cy:open": "cypress open",
+  "cy:run": "cypress run",
+  "test": "cypress run",
+  "test:frontend": "cypress run --spec \"cypress/e2e/frontend/**/*.feature\"",
+  "test:api": "cypress run --spec \"cypress/e2e/api/**/*.feature\"",
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix"
+}
 }
