@@ -1,5 +1,5 @@
 # ServeRest Cypress Challenge
-[![CI](https://github.com/SEU_USUARIO/serverest-cypress-challenge/actions/workflows/ci.yml/badge.svg)](https://github.com/SEU_USUARIO/serverest-cypress-challenge/actions/workflows/ci.yml)
+[![CI](https://github.com/Leandro0270/serverest-cypress-challenge/actions/workflows/ci.yml/badge.svg)](https://github.com/SEU_USUARIO/serverest-cypress-challenge/actions/workflows/ci.yml)
 
 Automação de testes E2E e API desenvolvida com Cypress, JavaScript e Cucumber para o desafio técnico de QA.
 
